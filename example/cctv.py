@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup as bs
 
 r = requests.get("http://www.cctv.com")
 
-r.encoding  = r.apprent_encoding
+r.encoding  = r.apparent_encoding
 
-soup = ba(r.txt)
+soup = bs(r.text)
 
 text = soup.find_all("a")
 
